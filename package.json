@@ -16,6 +16,6 @@
   },
   "scripts": {
     "dev": "ts-node ./src/index.ts",
-    "start": "node ./lib/app.js"
+    "start": "node ./lib/index.ts"
   }
 }
