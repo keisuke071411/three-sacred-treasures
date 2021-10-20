@@ -8,7 +8,7 @@ export const fetchTweetList = async (hashTag: string, say: SayFn) => {
     client.get('search/tweets', { 'q': `#${hashTagTxt}`, 'count': 10 }, async (error, data) => {
       const res = data.statuses
 
-      if (res.length === 0) return say('該当のツイートはありません')
+      if (!Array.isArray(res) || res.length === 0) return say('該当のツイートはありません')
 
       await res.forEach((item: any) => {
         if (item.text.substring(0, 2) !== 'RT') {
