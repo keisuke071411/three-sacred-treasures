@@ -9,5 +9,5 @@
     }
   },
   "exclude": ["node_modules", "lib"],
-  "include": ["src/*.ts", "src/*.js", ".eslintrc.js", "src/handlers/tweet.ts"]
+  "include": ["src/*.ts", "src/**/*.ts", ".eslintrc.js"]
 }
