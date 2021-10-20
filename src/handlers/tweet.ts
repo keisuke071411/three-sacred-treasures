@@ -7,7 +7,6 @@ export const tweetStatusesUpdate = async (sendText: string) => {
     });
   } catch (err) {
     console.error(err)
-    console.error('tweetStatusesUpdate')
-    throw Error
+    throw new Error('tweetStatusesUpdate func')
   }
 }

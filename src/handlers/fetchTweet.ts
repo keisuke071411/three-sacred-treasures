@@ -19,5 +19,6 @@ export const fetchTweetList = async (hashTag: string, say: SayFn) => {
     })
   } catch (error) {
     console.log(error)
+    throw new Error('fetchTweetList func')
   }
 }
