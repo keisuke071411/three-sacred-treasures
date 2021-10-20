@@ -1,6 +1,6 @@
 {
   "name": "slack-bot-template",
-  "main": "lib/src/index.ts",
+  "main": "lib/index.ts",
   "dependencies": {
     "@slack/bolt": "^3.6.0",
     "@slack/events-api": "^3.0.1",
@@ -16,6 +16,7 @@
   },
   "scripts": {
     "dev": "ts-node ./src/index.ts",
-    "start": "node ./lib/src/index.ts"
+    "build": "tsc",
+    "start": "node ./lib/index.ts"
   }
 }
